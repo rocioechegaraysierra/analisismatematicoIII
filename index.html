@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora de Transformada de Laplace" />
+    <meta name="keywords" content="calculadora, transformada, laplace" />
+    <meta name="author" content="Rocio E. Sierra" />
+    <title>Calculadora de SEN/COS de Transformada de Laplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #A2A2A2;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="20%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " style="font-size: 100%;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+
+        <div class="jumbotron">
+            <h2 class="display-4" style="padding: 1%;">Transformadas de Laplace</h2>
+            <hr class="my-4">
+            <p class="lead">Calculá ingresando los valores de tu función.</p>
+            <p>Elegí el tipo de función trigonométrica y el valor de su frecuencia.</p>
+            
+        </div>
+    </header>
+
+    <section>
+        
+            <div class="row text-center">
+                <div class="col align-self-center ">
+                    <h2 class="display-6 fs-6" style="padding: 2%;">Transformada de Laplace <span class="fs-1" style="display: block;">CALCULA</span>
+                    </h2>
+                    <p class="lead">Calculá ingresando los valores de tu función.</p>
+                    
+                </div>
+            </div>
+
+            <form>
+                <div class="row" style="padding: 1%;">
+
+                    <div class="col" >
+                        <label>Funciones trigonométricas</label>
+                        <select class="form-control" id="Funcion">
+                            <option selected>Elegir...</option>
+                            <option>SEN</option>
+                            <option>COS</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label>Escribir frecuencia. Por ejemplo: SEN(Bt) ó COS(Bt), valor de B.</label>
+                        <input type="text" class="form-control" id="Frecuencia" placeholder="Valor de frecuencia">
+                    </div>
+
+              
+                </div>
+
+            </form>
+        </div>
+
+        <div class="row text-center" style="padding: 1%;">
+            <div class="col align-self-center">
+                <button id="Calcular" type="submit" class="btn btn-secondary btn-lg">Calcular</button>
+                <script src="./script.js"></script>
+            </div>
+        </div>
+
+        <div class="alert alert-secondary text-center " role="alert" id="Mensaje" style="padding: 1%;"></div>
+
+        <section>
+
+    <section>
+        <div class="row text-center" style="padding: 1%;" id="#Propiedades">
+            <div class="col align-self-center">
+                <img src="./images/propiedades.jpg" alt="Propiedades">
+            </div>
+        </div>
+        <div class="row text-center" style="padding: 1%;" id="#Tabla">
+            <div class="col align-self-center">
+                <span class="fs-1" style="display: block;">TABLA DE TRANSFORMADAS DE LAPLACE</span>
+                <img src="./images/tabla.jpg" alt="Tabla">
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <footer style="background-color: #A2A2A2; text-align: center; font-family: 'Georgia'; font-size:medium" ;>
+        <p>Realizado por Rocio Sierra. Todos los derechos reservados. Copyright 2023©</p>
+    </footer>
+</body>
+
+</html>
